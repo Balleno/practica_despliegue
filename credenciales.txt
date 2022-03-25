@@ -1,0 +1,7 @@
+ip : 132.226.219.27
+
+"db":"grupo_3",
+"user":"grupo_3",
+"password":"afa_7315"
+
+ejemplo de base de datos [minimo 4 campos en una tabla(id,autor,titulo,descripcion)]
