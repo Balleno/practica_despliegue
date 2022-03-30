@@ -4,6 +4,6 @@
     $contra = 'afa_7315';
     $db = new PDO($conexion, $usuario, $contra);
 
-    $sql = "SELECT * FROM Pilotos";
+    $sql = "SELECT Nombre, Apellido, Nacionalidad, Victorias FROM Pilotos";
     $consulta = $db->query($sql);
 ?>
