@@ -9,9 +9,18 @@
 </head>
 <body>
     <?php include 'php/conexion.php' ?>
-    <h1>Colaboración de Git</h1>
-    <table>
-        
-    </table>
+    <h1 class="h1">Colaboración de Git</h1>
+    <div>
+        <?php
+            foreach ($consulta as $campo){
+                echo "<div class='tarjeta'>";
+                echo "<p class='campo'>Campo 1: ".$campo['nombre']."</p>";
+                echo "<p class='campo'>Campo 2: ".$campo['apellido']."</p>";
+                echo "<p class='campo'>Campo 3: ".$campo['nacionalidad']."</p>";
+                echo "</div>";
+            }
+            
+        ?>
+    </div>
 </body>
 </html>
