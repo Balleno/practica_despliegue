@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <?php include 'php/conexion.php' ?>
+    <?php include('php/conexion.php') ?>
     <h1 class="h1">Colaboración de Git</h1>
     <div>
         <?php
             foreach ($consulta as $campo){
+                /* Creamos una tarjeta para cada uno de los pilotos */
                 echo "<div class='tarjeta'>";
-                echo "<p class='campo'>Campo 1: ".$campo['nombre']."</p>";
-                echo "<p class='campo'>Campo 2: ".$campo['apellido']."</p>";
-                echo "<p class='campo'>Campo 3: ".$campo['nacionalidad']."</p>";
+                echo "<p class='campo'>Nombre: ".$campo['Nombre']."</p>";
+                echo "<p class='campo'>Apellido: ".$campo['Apellido']."</p>";
+                echo "<p class='campo'>Nacionalidad: ".$campo['Nacionalidad']."</p>";
+                echo "<p class='campo'>Victorias: ".$campo['Victorias']."</p>";
                 echo "</div>";
             }
             
